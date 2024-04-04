@@ -84,35 +84,40 @@ public class BootStrapData implements CommandLineRunner {
             casing.setPartId(100);
             casing.setName("case");
             casing.setPrice(300.00);
-            casing.setInv(15);
+            casing.setMinInv(1);
+            casing.setMaxInv(99);
             partRepository.save(casing);
 
             InhousePart bezel = new InhousePart();
             bezel.setPartId(101);
             bezel.setName("bezel");
             bezel.setPrice(500.00);
-            bezel.setInv(15);
+            bezel.setMinInv(1);
+            bezel.setMaxInv(99);
             partRepository.save(bezel);
 
             InhousePart crystal = new InhousePart();
             crystal.setPartId(102);
             crystal.setName("crystal");
             crystal.setPrice(400.00);
-            crystal.setInv(15);
+            crystal.setMinInv(1);
+            crystal.setMaxInv(99);
             partRepository.save(crystal);
 
             InhousePart crown = new InhousePart();
             crown.setPartId(103);
             crown.setName("crown");
             crown.setPrice(200.00);
-            crown.setInv(15);
+            crown.setMinInv(1);
+            crown.setMaxInv(99);
             partRepository.save(crown);
 
             InhousePart strap = new InhousePart();
             strap.setPartId(104);
             strap.setName("strap");
             strap.setPrice(100.00);
-            strap.setInv(15);
+            strap.setMinInv(1);
+            strap.setMaxInv(99);
             partRepository.save(strap);
         }
 

@@ -8,3 +8,7 @@ Added a "buy now" button to mainscreen.html, line 85.
 Added a "buyProductNow" method to AddProductController file, lines 130 - 141.
 Created a confirmationbuynow.html file to display a message of a successful buy.
 Created a negativeproducterror.html file to display a message of an unsuccessful buy when a product has 0 inventory.
+Added intMin and intMax variables to Part.java entity on lines 32 - 36.
+Created getters and setters for these variables in Part.java entity on lines 66 - 80.
+Edited the sample inventory in BootStrapData component to include min and max inventory, lines 82 - 122.
+Added input fields to the InhousePartForm.html and OutsourcePartForm.html for minimum and maximum inventory.
