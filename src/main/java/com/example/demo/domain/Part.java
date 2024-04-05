@@ -1,6 +1,7 @@
 package com.example.demo.domain;
 
 import com.example.demo.validators.ValidDeletePart;
+import org.hibernate.validator.constraints.Range;
 
 import javax.persistence.*;
 import javax.validation.constraints.Max;
@@ -27,6 +28,7 @@ public abstract class Part implements Serializable {
     String name;
     @Min(value = 0, message = "Price value must be positive")
     double price;
+    @Range(min = 0,max = 100, message = "Out of range")
     @Min(value = 0, message = "Inventory value must be positive")
     int inv;
     @Min(value = 1, message = "Minimum inventory is 1")
@@ -55,10 +57,11 @@ public abstract class Part implements Serializable {
         this.inv = inv;
     }
 
-    public Part(long id, String name, double price, int minInv, int maxInv) {
+    public Part(long id, String name, double price, int inv, int minInv, int maxInv) {
         this.id = id;
         this.name = name;
         this.price = price;
+        this.inv = inv;
         this.minInv = minInv;
         this.maxInv = maxInv;
     }

@@ -12,3 +12,6 @@ Added intMin and intMax variables to Part.java entity on lines 32 - 36.
 Created getters and setters for these variables in Part.java entity on lines 66 - 80.
 Edited the sample inventory in BootStrapData component to include min and max inventory, lines 82 - 122.
 Added input fields to the InhousePartForm.html and OutsourcePartForm.html for minimum and maximum inventory.
+Corrected the Part constructor by initializing an inv variable in the Part entity, line 62.
+Added a Range validator to the int variable in Part entity, line 31.
+Added MIN and MAX validators to the min and max variables in Part entity, lines 34 and 36.
