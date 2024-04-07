@@ -1,5 +1,7 @@
 package com.example.demo.domain;
 
+import com.example.demo.validators.ValidRange;
+
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 
